@@ -9,7 +9,17 @@
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
 module.exports = (robot) ->
+  
+  # A simple heard/send message
+  #robot.hear /Hello/i, (res) ->
+  #  res.send "Hello there!"
 
+  # A test with an emote
+  #robot.hear /I like pie/i, (res) ->
+  #  res.emote "makes a freshly baked pie"
+    
+  
+  
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
@@ -20,9 +30,7 @@ module.exports = (robot) ->
   #   else
   #     res.reply "Opening #{doorType} doors"
   #
-  # robot.hear /I like pie/i, (res) ->
-  #   res.emote "makes a freshly baked pie"
-  #
+
   # lulz = ['lol', 'rofl', 'lmao']
   #
   # robot.respond /lulz/i, (res) ->
