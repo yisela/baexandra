@@ -22,14 +22,6 @@ module.exports = (robot) ->
 
 
 
-robot.hear /h5/, (msg) ->
-    msg.emote "high fives"
-
-
-
-
-
-
 # Description:
 #   Cute me is a way to get pictures of cute things
 #
