@@ -1,10 +1,18 @@
-# Baexandra
+# Baexandra Robotobor
 
 Hi! I'm Baexandra, your friendly(-ish) onboarding bot! I'm built on [Hubot][hubot] and configured to be deployed on [Heroku][heroku]. 
 
-At the moment I'm only running on a local server, so I might not be online at all times. My knowledge is still very limited, but I'm technically a newborn.
+## I can:
 
-If you can see me in Slack, type *commands* to see what I can do, or *Start* to initiate the onboarding. For the moment, I can give simple instructions, show links and play cards against humanity. 
+- Reply to yes/no questions
+- Search for components in a library of pre-defined items
+- Wish goodnight and say think you
+- Play Cards against humanity
+- Introduce herself
+- Show cute animals
+- Show links to assets
+
+At the moment I'm only running on a local server, so I might not be online at all times. If you can see me in Slack, type *Commands* to see what I can do.
 
 [heroku]: http://www.heroku.com
 [hubot]: http://hubot.github.com
