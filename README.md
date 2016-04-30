@@ -4,11 +4,11 @@ Hi! I'm Baexandra, your friendly(-ish) onboarding bot! I'm built on [Hubot][hubo
 
 ## I can:
 
-- Reply to yes/no questions
+- Reply to yes/no and some simple questions
 - Search for components in a library of pre-defined items
-- Wish goodnight and say think you
+- Wish goodnight and say thank you
 - Play Cards against humanity
-- Introduce herself
+- Introduce myself
 - Show cute animals
 - Show links to assets
 
