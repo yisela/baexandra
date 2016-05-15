@@ -12,7 +12,7 @@ Hi! I'm Baexandra, your friendly(-ish) onboarding bot! I'm built on [Hubot][hubo
 - Show cute animals
 - Show links to assets
 
-At the moment I'm only running on a local server, so I might not be online at all times. If you can see me in Slack, type *Commands* to see what I can do.
+I live in Heroku, so I have to sleep 6 hours a day, and do so at night (when else?) If you can see me online in Slack, type *Commands* to see what I can do.
 
 [heroku]: http://www.heroku.com
 [hubot]: http://hubot.github.com
