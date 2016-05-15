@@ -1,5 +1,5 @@
 # Description:
-# Standard basic questions 
+# Ideas taken from ALICE bot "questions most frequently asked to virtual agents"
 
 
 
@@ -79,17 +79,24 @@ hardWork = [
 
 module.exports = (robot) ->
   
-  robot.hear /(w|W)ow are you/, (msg) ->
+  # ALICE
+
+  robot.hear /(h|H)ow are you/, (msg) ->
     msg.send msg.random howAreYou
 
-  robot.hear /(w|W)ho are you/, (res) ->
-    res.send "Haven't I said it already? I must be getting old. I'm Baex!"
+  robot.hear /(w|W)ho are you|(w|W)hat('s| is) your name/, (msg) ->
+    msg.send "Haven't I said it already? I must be getting old. I'm Baex!"
 
-  robot.hear /(w|W)hat do you do|(w|W)at('s|is) your job/, (res) ->
-    res.send "I'm an onboarding bot... in training. Type *Commands* to see what I can do."
+  robot.hear /(w|W)ho am I|(w|W)hat('s| is) my name/, (msg) ->
+    msg.send "I think only you can answer that question. All I know is we are both here now."
+
+  robot.hear /(w|W)hat do you do|(w|W)at('s|is) your job/, (msg) ->
+    msg.send "I'm an onboarding bot... in training. Type *Commands* to see what I can do."
 
   robot.hear /(b|B)ot|(r|R)obot|(a|A)re you a/, (msg) ->
     msg.send msg.random botReplies
+
+  # Manual input
 
   robot.hear /(b|B)aexandra/, (msg) ->
     msg.send msg.random botName
@@ -122,3 +129,26 @@ module.exports = (robot) ->
 
   robot.hear /hard work/, (msg) ->
     msg.send msg.random hardWork
+
+
+  robot.hear /what year is it\?/i, (msg) ->
+    msg.send new Date().getFullYear()
+
+
+  # Likes
+
+  # favourite
+  robot.hear /(w|W)hat('s| is) your fav(o|ou)rite/, (msg) ->
+    msg.send "I couldn't say, I like everything so much!"
+
+  # opinions
+  robot.hear /(w|W)hat do you think of|(w|W)hat('s| is) your opinion|(w|W)hat('s| is) the meaning of/, (msg) ->
+    msg.send "How should I, of all _people_, know?"
+
+  #what's this and that
+  robot.hear /(w|W)hat('s| is) (that|this|it)/, (msg) ->
+    msg.send "I honestly have no idea. What is it?"
+
+  #what is...
+  robot.hear /(w|W)hat('s|is|are|'re) (the|a)/, (msg) ->
+    msg.send "I don't think you should be asking _me_ that"
